@@ -17,7 +17,7 @@
 
 ### Body:
 
-- Content type: application/x-www-form-urlencoded
+- Content type is application/x-www-form-urlencoded
 - Must contains `api_key` parameter for authentication (connection.api_key)
 - Must contains `quillforms_make_action` parameter (See Actions Section below)
 
@@ -32,7 +32,7 @@
 
 ### Body:
 
-- Content type: application/json
+- Content type is application/json
 - json response contains:
   - `success`: boolean
   - `data`: array|object
@@ -82,7 +82,7 @@ Used to test the authentication (used at connection communication).
 
 ### `subscribe` :
 
-Used for attaching new form entry webhook.
+Used for attaching `NewFormEntry` webhook.
 
 #### Request example:
 
@@ -95,7 +95,7 @@ Used for attaching new form entry webhook.
 
 ### `unsubscribe` :
 
-Used for detaching new form entry trigger subscription.
+Used for detaching `NewFormEntry` webhook.
 
 #### Request example:
 
@@ -108,7 +108,7 @@ Used for detaching new form entry trigger subscription.
 
 ### `get_forms` :
 
-Used for getting available forms.
+Used for getting available forms (`New Form Entry` & `Form Entries` modules).
 
 #### Request example:
 
@@ -121,7 +121,7 @@ Used for getting available forms.
 
 ### `get_entries` :
 
-Used for getting entries of a specific form.
+Used for getting entries of a specific form (`Form Entries` module).
 
 #### Request example:
 
@@ -130,11 +130,11 @@ Used for getting entries of a specific form.
   `content-type: application/x-www-form-urlencoded`  
   `accept: application/json`
 - body:  
-  `api_key={connection.api_key}&quillforms_make_action=get_entries&form_id=1`
+  `api_key={connection.api_key}&quillforms_make_action=get_entries&form_id=1&page=1`
 
 ### `get_fields` :
 
-Used for getting fields (interface) of a specific form.
+Used for getting item `(entry)` interface of a specific form (`New Form Entry` & `Form Entries` modules).
 
 #### Request example:
 
