@@ -108,7 +108,7 @@ Used for detaching `NewFormEntry` webhook.
 
 ### `get_forms` :
 
-Used for getting available forms (`New Form Entry` & `Form Entries` modules).
+Used for getting available forms (`NewFormEntry` & `FormEntries` modules).
 
 #### Request example:
 
@@ -121,7 +121,7 @@ Used for getting available forms (`New Form Entry` & `Form Entries` modules).
 
 ### `get_entries` :
 
-Used for getting entries of a specific form (`Form Entries` module).
+Used for getting entries of a specific form (`FormEntries` module).
 
 #### Request example:
 
@@ -134,7 +134,7 @@ Used for getting entries of a specific form (`Form Entries` module).
 
 ### `get_fields` :
 
-Used for getting item `(entry)` interface of a specific form (`New Form Entry` & `Form Entries` modules).
+Used for getting item `(entry)` interface of a specific form (`NewFormEntry` & `FormEntries` modules).
 
 #### Request example:
 
